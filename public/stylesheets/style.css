@@ -1,0 +1,39 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+#messages{
+	list-style-type:none;
+}
+
+#message{
+	position:relative;
+}
+
+#footer{
+	position:fixed;
+	bottom:30px;
+	width:100%;
+}
+
+#thumb{
+	background-color: #0066FF;
+	border-color: #0066FF;
+}
+
+.main{
+	background-color:#0099FF;
+	color:#FFFFFF;
+	text-align:center;
+	top: 20px;
+}
+
+#disconnect{
+	position:fixed;
+	right:50px;
+}

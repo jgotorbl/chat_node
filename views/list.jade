@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  div#users
+    ul#list
+      each user in list
+        li= user
+  form(method="POST", action="/?chat")
+    input.btn.btn-default(type="submit" value="Return to chat")
+  br
+  br
+  form(method="POST", action="/disconnect")
+    input.btn.btn-primary(type="submit" value="Logout")

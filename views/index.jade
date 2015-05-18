@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  p #{title}: A website where you can talk with great people
+  form(method="POST",action="/?users")
+   p Enter your user name: 
+   input(type="text" name="username"  placeholder="Username")
+   br 
+   br
+   input(type="submit")

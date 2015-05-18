@@ -1,0 +1,22 @@
+extends layout
+
+block content
+  form(method="POST", action="/disconnect")
+      input(type="hidden" name="user" value="#{name}")
+      input.btn.btn-danger(type="submit" id="disconnect" value="Disconnect")
+  form(method="POST", action="/users")
+      input(type="hidden" id="list" value="#{list}")
+      input.btn.btn-default(type="submit" name="userlist" value="Connected users")
+  h3 This is the chatroom. Post whatever you want on it 
+  p#usernameused #{name}
+   
+  ul#messages
+  div#footer
+    form#message
+      input(id="m" autocomplete="off" size="90")
+      input.btn.btn-success(type="button" id="send" value="Send")
+      input.btn.btn-default(type="image" id="thumb" src="./images/fb_like.png")
+   
+
+  script
+    include ../public/javascripts/socket.js
